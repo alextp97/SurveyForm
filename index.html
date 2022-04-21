@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+    <title>Survey Form - ATP</title>
+</head>
+
+<!--Comienzo del cuerpo del ejercicio-->
+  <body>
+    <!--Contenedor que contiene todo el formulario-->
+    <div class="container">
+      <!--Cabecera del formulario-->
+      <header class="head">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Gracias por ayudarnos a mejorar</p>
+      </header>
+      
+      <!--Aquí comienza el formulario-->
+      <form id="survey-form">
+
+        <!--Campo del nombre-->
+        <div class="group-form">
+          <label id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="form-input" placeholder="Introduce tu nombre" required>
+        </div>
+        
+        <!--Campo del email-->
+        <div class="group-form">
+           <label id="email-label">Email</label>
+          <input type="email" name="email" id="email" class="form-input" placeholder="Introduce tu email" required>
+        </div>
+        
+        <!--Campo de la edad-->
+        <div class="group-form">
+          <label id="number-label">Edad (Opcional)</label>
+          <input type="number" name="age" id="number" min="1" max="100" class="form-input" placeholder="Introduce tu edad" required>
+        </div>
+        
+        <!--Campo del dropdown-->
+        <div class="group-form">
+          <p>¿Cuál opción describe mejor tu situación actual?</p>
+          
+          <select id="dropdown" name="role" required>
+            <option disabled selected value> Selecciona una opción</option>
+            <option value="student">Student</option>
+            <option value="fjob">Full Time Job</option>
+            <option value="flearner">Full Time Learner</option>
+            <option value="nsay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <!--Campo del radiobutton-->
+        <div class="group-form">
+          <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+          <label><input type="radio" id="definetly" name="recommend" value="definetly" class="radiobtn" checked>
+Definitivamente</label>
+          <label><input type="radio" id="maybe" name="recommend" value="maybe" class="radiobtn">
+Quizás</label>
+         <label><input type="radio" id="notsure" name="recommend" value="notsure" class="radiobtn">
+No estoy seguro</label>     
+        </div>
+        
+        <!--Campo del checkbutton-->
+        <div class="group-form">
+          <p>¿Que te gustaría que mejorásemos?</p>
+          <label>
+            <input type="checkbox" value="front-end-proyects" class="checkbtn">Front-end Proyects
+          </label>
+          
+          <label>
+            <input type="checkbox" value="back-end-proyects" class="checkbtn">Back-end Proyects
+          </label>
+          
+          <label>
+            <input type="checkbox" value="challenges" class="checkbtn">Challenges
+          </label>
+          
+          <label>
+            <input type="checkbox" value="videos" class="checkbtn">Videos
+          </label>
+          
+          <label>
+            <input type="checkbox" value="wiki" class="checkbtn">Wiki
+          </label>
+        </div>
+        
+        <!--Campo del textarea-->
+        <div class="group-form">
+          <p>¿Algún comentario o sugerencia?</p>
+          <textarea class="textarea" placeholder="Introduce tu comentario aquí..."></textarea>
+        </div>
+        
+        <!--Campo del boton de enviar-->
+        <div class="group-form">
+          <button type="submit" id="submit">Enviar</button>
+        </div>    
+      </form> 
+    </div>
+    
+  </body>
+  
+</html>
